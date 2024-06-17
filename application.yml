@@ -1,0 +1,22 @@
+# Service Post 설정
+server:
+  port: 8080
+
+# Log Level 설정
+logging:
+  level:
+    root: info
+
+# RabbitMQ 연결 정보
+spring:
+  rabbitmq:
+    host:
+    port:
+    username:
+    password:
+
+# RabbitMQ queue, exchange, routing-key 정보
+rabbitmq:
+  queue.name:
+  exchange.name:
+  routing.key:
