@@ -40,7 +40,7 @@ public class MessageService {
      * @param messageDto 구독한 메시지를 담고 있는 MessageDto 객체
      */
     @RabbitListener(queues = "${rabbitmq.queue.name}")
-    public void reciveMessage(MessageDto messageDto) {
+    public void receiveMessage(MessageDto messageDto) {
         log.info("Received message: {}", messageDto.toString());
     }
 }
